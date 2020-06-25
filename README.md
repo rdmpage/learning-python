@@ -15,6 +15,8 @@ Make sure we have [rispy](https://github.com/MrTango/rispy) installed:
 pip3 install rispy
 ```
 
+### Create a RIS file
+
 Then run example `ris.py`
 
 ```
@@ -40,3 +42,8 @@ AB  - Lorem ipsum
 ER  - 
 
 ```
+
+### Read a RIS file
+
+The file `readris.py` reads the RIS file created in the previous step.
+

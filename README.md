@@ -5,8 +5,9 @@ Place to collect scripts and notes on learning Python.
 ## Tutorials
 
 - [Tutorial - Learn Python in 10 minutes](https://www.stavros.io/tutorials/python/)
+- [Python API Tutorial: Getting Started with APIs] (https://www.dataquest.io/blog/python-api-tutorial/)
 
-## Read RIS files
+## Read and write RIS files
 
 Make sure we have [rispy](https://github.com/MrTango/rispy) installed:
 
@@ -20,7 +21,7 @@ Then run example `ris.py`
 python3 ris.py
 ```
 
-Should get file `export.ris`
+This should create the file `export.ris`
 
 ```
 1.

@@ -45,7 +45,7 @@ def get_json_value(json, key):
 
 # BHL API Key
 # If you need a key, or have forgotten your key, go to https://www.biodiversitylibrary.org/getapikey.aspx
-bhl_key = 'YOUR_API_KEY_GOES_HERE'
+bhl_key = '0d4f0303-712e-49e0-92c5-2113a5959159'
 
 # BHL API endpiont
 service_url = 'https://www.biodiversitylibrary.org/api3?'

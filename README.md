@@ -15,7 +15,7 @@ If you get errors like:
 urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:833)>
 ```
 
-then see [Stack overflow](https://stackoverflow.com/a/48134650/9684). Add 
+then see [urllib and “SSL: CERTIFICATE_VERIFY_FAILED” Error](https://stackoverflow.com/a/48134650/9684). Add 
 
 ```
 import certifi

@@ -7,6 +7,25 @@ Place to collect scripts and notes on learning Python.
 - [Tutorial - Learn Python in 10 minutes](https://www.stavros.io/tutorials/python/)
 - [Python API Tutorial: Getting Started with APIs] (https://www.dataquest.io/blog/python-api-tutorial/)
 
+## SSH issues
+
+If you get errors like:
+
+```
+urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:833)>
+```
+
+then see [Stack overflow](https://stackoverflow.com/a/48134650/9684). Add 
+
+```
+import certifi
+import ssl
+```
+
+then in `urllib.request.urlopen` add parameter `context=ssl.create_default_context(cafile=certifi.where())`
+
+
+
 ## Read and write RIS files
 
 Make sure we have [rispy](https://github.com/MrTango/rispy) installed:

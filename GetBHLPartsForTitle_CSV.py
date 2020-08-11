@@ -9,13 +9,19 @@ import json             # JSON library for extracting informaion from the API re
 import re               # Regular Expression library for validating values
 import csv              # Comma-separated value library for writing delimited data
 
+# https://stackoverflow.com/a/48134650/9684
+import certifi
+import ssl
+
 #--------------------------------------------------------------------------------------------------------
 # FUNCTIONS
 
 # Execute an API method and return the response
 def get_data_from_api(parameters):
     url = service_url + urllib.parse.urlencode(parameters)
-    url_handler = urllib.request.urlopen(url)
+    # url_handler = urllib.request.urlopen(url)
+    # https://stackoverflow.com/a/48134650/9684
+    url_handler = urllib.request.urlopen(url, context=ssl.create_default_context(cafile=certifi.where()))
     return url_handler.read().decode('utf-8')
 
 # Load the supplied data into a JSON object and validate it

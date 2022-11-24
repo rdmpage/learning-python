@@ -1,3 +1,4 @@
 
 .DS_Store
 junk/*
+__pycache__/json.cpython-39.pyc
